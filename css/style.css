@@ -1,0 +1,386 @@
+
+body {
+    font-family: cursive;
+    background: white;
+    cursor: default;    
+    overflow: hidden;
+}
+
+#wrap {
+    position: relative;
+    transform-origin: 0% 0%;
+    left: -8px;
+}
+
+#container {
+    position: relative;
+    margin: 0 auto;
+    width: 900px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#background {
+    width: 870px;
+    height: 555px;
+    padding-right: .260416667in;
+    padding-left: .260416667in;
+    padding-top: 0;
+    padding-right: 0; 
+    background-color: #0fa0c5;
+}
+
+#card {
+    position: relative;
+    top: 0px;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+#header {
+    width: 850px;
+    height: 90px;
+    padding-right: .260416667in;
+    padding-left: .260416667in;
+}
+
+.title {
+    position: relative;
+    top: 20px;
+    margin-left: -5px;
+    padding: 10px;
+    font-size: 25px;
+}
+
+#last-line { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 870px;
+    height: 80px;
+    border: 2px;
+    padding-left: .260416667in;
+    padding-top: 0;
+    padding-right: 0; 
+    background-color: #deecf6;
+}
+
+#out {
+    position: relative;
+    top: -10px;
+    width: 840px;
+    height: 568px;
+    border-radius: 1.25pc;
+    background-color: white;
+    border-style: solid;
+    border-color: #f5821f;
+    overflow: hidden; 
+}
+
+.card-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.inner {
+    position: relative;
+    width: 95%;
+    height: 95%;
+    margin: 10px auto;
+}
+
+.content {
+    position: relative;
+    top: 50px;
+    margin: auto;
+    width: 90%;
+    height: 70%;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+.choice-btn {
+    position: relative;
+    top: 10px;
+    margin: 10px;
+    width: 50px;
+    height: 120%;
+    border: 2px #0fa0c5 solid;
+    border-radius: 15px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.btn-text {
+    margin:auto;
+    margin-bottom: 5px;
+    font-size: 35px;
+    font-family: cursive;
+    color: black;
+}
+
+.questions {
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.first-line , .second-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    width: 100%;
+    height: 120px;
+    font-size: 35px;
+}
+
+.second-line {
+    margin-top: 35px;   
+}
+
+.first-q {
+    position: relative;
+    left: -20px;
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+}
+
+.qtn {
+    position: absolute;
+    width: 45px;
+    text-align: center;
+    border-bottom: 3px solid black;
+    white-space: pre;
+    cursor: default;
+}
+
+.fx1 , .fx2 , .fx3{
+    position: relative;
+    left: 25px;
+}
+
+#img{
+    position: relative;
+    left: 40px;
+}
+
+.div-q {
+    position: relative;
+    top: 15px;
+    margin-right: 10px;
+}
+
+.second-q {
+    display: flex;
+    flex-direction: row;
+    margin-left: -70px;
+    margin-right: -50px;
+    width: 50%;
+    padding-left: 40px;
+}
+
+.third-q {
+    display: flex;
+    flex-direction: row;
+    margin-left: -70px;
+    margin-right: -50px;
+    width: 50%;
+    padding-left: 40px;
+}
+
+.button1 {
+    margin: 6px;
+    margin-top: 5px;
+    margin-right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    float: right;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.button2 {
+    margin: 6px;
+    margin-top: 5px;
+    margin-right: 0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    float: right;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.button3 {
+    position: relative;
+    top: 5px;
+    margin: 6px;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    float: left;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.div1 {
+    width: 80%;
+    float: left;
+}
+
+.div2 {
+    width: 60%;
+}
+
+.button4 {
+    position: relative;
+    top: 5px;
+    margin: 6px;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    display: none;
+    margin:auto;
+    width: 870px;
+    height: 900px;
+    padding-right: .260416667in;
+    padding-left: .260416667in;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.modal {
+    position: fixed;
+    z-index: 1;
+    top: 10px;
+    display: none;
+    margin-top: 70px;
+    width: 840px;
+    height: 568px;
+    border-radius: 1.25pc;
+    border-style: solid;
+    border-color: #f5821f;
+    background-color: rgba(255, 255, 255);
+}
+
+.close {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    transition: 0.3s;
+    display: none;
+    height: 1px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #070202;
+    cursor: pointer;
+}
+
+.dummy-image {
+    display: block; 
+}
+
+.resource {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 95%;
+    height: 95%;
+    display: none;
+    overflow: auto;
+}
+
+.help {
+    display: none;
+    margin: 10px;
+    padding: 10px;
+    font-size: 25px;
+}
+
+#right1 , #right2, #right3 {
+    position:relative;
+    bottom: 15px;
+    left: 25px;
+    visibility: hidden;
+    margin-right: -15px;
+}
+
+#wrong1 , #wrong2 , #wrong3 {
+    position:relative;
+    bottom: 15px;
+    left: 20px;
+    visibility: hidden;
+    margin-right: -15px;
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    70% {
+      opacity: 0;
+    }
+}
+
+#loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 1000px;
+    height: 1000px;
+    z-index: 9999;
+    background: url('../images/preloader.gif') 50% 50% no-repeat rgb(255,255,255);
+}
+
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animationFromBottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animationFromBottom;
+    animation-duration: 1s;
+}
+
+@-webkit-keyframes animationFromBottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+}
+  
+@keyframes animationFromBottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+}
+
+@media screen and (min-width: 700px) {
+    #wrap {
+        position: relative;
+        transform-origin: 0% 0%;
+        left: -8px;
+    }
+}
+@media screen and (min-width:1800px) and (max-width: 2500px) {
+    #wrap {
+        position: relative;
+        transform-origin: 0% 0%;
+        transform: scale(1.5);
+        left: -150px;
+    }
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Educational RC </title>
+
+       <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">
+
+      <!-- Styles -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+      <!-- Main Container -->
+  <div id="container" class="animate-bottom">
+
+      <!-- Wrapper Container -->
+    <div id="wrap">
+      <div id="loader"></div>
+      <div id="card" class="animate-bottom">
+ 
+          <!-- Start Header -->
+        <div id="header">
+          <span class="title">
+            Complete the words.
+            <span id="button2" class="button2">
+              <img src="images/btn2.png">
+            </span>
+            <span id="button1" class="button1">
+                <img src="images/btn1.png">
+              </span>
+          </span>
+        </div>
+          <!-- End Header -->
+
+          <!-- Audios-->
+        <audio id="audio1" src="audio/correct.mp3" preload="auto"></audio>
+        <audio id="audio2" src="audio/error.mp3" preload="auto"></audio>
+
+        <!-- Start Background -->
+           <div id="background">
+
+        <!--Start Content -->
+          <div id="outer">
+            <div id="out">
+              <div class="card-content">
+                <div class="inner">
+                  <div class="content">
+                    <div class="choices">
+                      <button id="ch1" class="choice-btn">
+                        <div class="btn-text">a</div>
+                      </button>
+                      <button id="ch2" class="choice-btn">
+                        <div class="btn-text">p</div>
+                      </button>
+                    </div>
+                    <div class="questions">
+                      <div class="first-line">
+                        <div class="first-q">
+                          <div class="div-q">
+                            1&nbsp;&nbsp;t
+                            <span id="ans1" data-Answer="a" class="qtn">&nbsp;</span>
+                            <sup id="right1"><img src="images/right.png" /></sup>
+                            <sup id="wrong1"><img src="images/wrong.png" /></sup>
+                            <span class="fx1">p</span>
+                          </div>
+                          <div id="img"><img src="images/img1.png" /></div>
+                        </div>
+                        <div class="second-q">
+                          <div class="div-q">
+                            2&nbsp;&nbsp;
+                            <span id="ans2" data-Answer="p" class="qtn">&nbsp;</span>
+                            <sup id="right2"><img src="images/right.png" /></sup>
+                            <sup id="wrong2"><img src="images/wrong.png" /></sup>
+                            <span class="fx2">a&nbsp;t</span>
+                          </div>
+                          <div id="img"><img src="images/img2.png" /></div>
+                        </div>
+                      </div>
+                      <div class="second-line">
+                        <div class="third-q">
+                          <div class="div-q">
+                            3&nbsp;&nbsp;m
+                            <span id="ans3" data-Answer="a" class="qtn">&nbsp;</span>
+                            <sup id="right3"><img src="images/right.png" /></sup>
+                            <sup id="wrong3"><img src="images/wrong.png" /></sup>
+                            <span class="fx3">p</span>
+                          </div>
+                          <div id="img"><img src="images/img3.png" /></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- End Content -->
+    </div>
+        <!-- End Background -->
+
+        <!-- Start Footer -->
+        <div id="footer">
+          <div id="last-line">
+            <div class="div1">
+              <span id="button3" class="button3">
+                <img src="images/btn3.png">
+              </span></div>
+            <div class="div2">
+              <span id="button4" class="button4">
+                <img src="images/btn4.png">
+              </span>
+            </div>
+          </div>
+        </div>
+        <!--End Footer -->
+
+
+           <!-- Start Dummy and Help  -->
+        <div id="overlay" class="overlay">
+          <div id="model" class="modal">
+
+            <!-- Dummy Photos-->
+            <div id="dummy" class="resource">
+              <div class="dummy-image">
+                <img src="images/dummy.jpg" />
+              </div>
+            </div>
+
+            <!-- Help-->
+            <div id="help" class="help">
+              Help content goes here.
+            </div>
+            <span id="close" class="close">
+              <img src="images/close.png">
+            </span>
+          </div>
+        </div>
+        <!-- End Dummy and Help-->
+      </div>
+    </div>
+  </div>
+
+   <!-- Script-->
+  <script src="js/main.js"></script>
+</body>
+</html>
